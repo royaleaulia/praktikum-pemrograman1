@@ -10,8 +10,8 @@ keliling = sisiA + sisiB + sisiC
 luas = 0.5 * alas * tinggi
 
 print("Jawab:")
-print(f"Sisi A = {sisiA:.2f} cm")
-print(f"Sisi B = {sisiB:.2f} cm")
-print(f"Sisi C = {sisiC:.2f} cm")
-print(f"Keliling = {keliling:.2f} cm")
-print(f"Luas = {luas:.2f} cm")
+print(f"Sisi A = {sisiA:.0f} cm")
+print(f"Sisi B = {sisiB:.0f} cm")
+print(f"Sisi C = {sisiC:.0f} cm")
+print(f"Keliling = {keliling:.0f} cm")
+print(f"Luas = {luas:.0f} cm")

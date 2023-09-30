@@ -19,6 +19,4 @@ int main()
     printf("Apakah a tidak sama dengan c? jawabannya adalah %d\n", apakah_a_tidak_sama_dengan_c);
 
     return 0;
-
-    return 0;
 }

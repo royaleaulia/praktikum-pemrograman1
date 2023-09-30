@@ -9,8 +9,6 @@ int main()
     printf("Masukan Jarak Tempuh Pak Denglek (Satuan Kilometer) : ");
     scanf("%f", &jaraktempuh);
     float kelilingaslilingkaran = jaraktempuh / putaran;
-
-    printf("%f", kelilingaslilingkaran);
     float jarijari = kelilingaslilingkaran / (2 * M_PI);
 
     printf("Diketahui: \n");

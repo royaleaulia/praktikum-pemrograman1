@@ -11,16 +11,16 @@ int main()
 
     printf("Jawab : \n");
     sisiA = tinggi;
-    sisiB = sqrt(alas * alas + tinggi * tinggi);// Menggunakan Teorema Pythagoras
+    sisiB = sqrt(alas * alas + tinggi * tinggi); // Menggunakan Teorema Pythagoras
     sisiC = alas;
     keliling = sisiA + sisiB + sisiC;
     luas = 0.5 * alas * tinggi;
 
-    printf("Sisi A = %.2f cm\n", sisiA);
-    printf("Sisi B = %.2f cm\n", sisiB);
-    printf("Sisi C = %.2f cm\n", sisiC);
-    printf("Keliling = %.2f cm\n", keliling);
-    printf("Luas = %.2f cm\n", luas);
+    printf("Sisi A = %.0f cm\n", sisiA);
+    printf("Sisi B = %.0f cm\n", sisiB);
+    printf("Sisi C = %.0f cm\n", sisiC);
+    printf("Keliling = %.0f cm\n", keliling);
+    printf("Luas = %.0f cm\n", luas);
 
     return 0;
 }

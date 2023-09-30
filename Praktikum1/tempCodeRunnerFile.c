@@ -1,26 +1,17 @@
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    float alas, tinggi, sisiA, sisiB, sisiC, keliling, luas;
-    printf("Alas (Menggunakan cm): ");
-    scanf("%f", &alas);
-    printf("Tinggi (Menggunakan cm): ");
-    scanf("%f", &tinggi);
+    int jmlhpasukanyuzhong, jmlhpahlawan;
+    printf("Jumlah Pasukan Yang Dibawa Yuzhong : ");
+    scanf("%d", &jmlhpasukanyuzhong);
+    printf("Jumlah Pahlawan : ");
+    scanf("%d", &jmlhpahlawan);
+    int bagipasukan = jmlhpasukanyuzhong / jmlhpahlawan;
 
-    printf("Jawab : \n");
-    sisiA = alas;
-    sisiB = tinggi;
-    sisiC = sqrt(alas * alas + tinggi * tinggi); // Menggunakan Teorema Pythagoras
-    keliling = sisiA + sisiB + sisiC;
-    luas = 0.5 * alas * tinggi;
-
-    printf("Sisi A = %.2f cm\n", sisiA);
-    printf("Sisi B = %.2f cm\n", sisiB);
-    printf("Sisi C = %.2f cm\n", sisiC);
-    printf("Keliling = %.2f cm\n", keliling);
-    printf("Luas = %.2f cm\n", luas);
+    printf("Jumlah Pasukan Yang Dibawa Yuzhong : %d\n", jmlhpasukanyuzhong);
+    printf("Jumlah Pahlawan : %d\n", jmlhpahlawan);
+    printf("Jumlah pasukan yang harus dikalahkan setiap pahlawan adalah %d pasukan\n", bagipasukan);
 
     return 0;
 }
