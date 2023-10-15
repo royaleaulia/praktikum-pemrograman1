@@ -1,17 +1,19 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    float hasil, a, b, i, j, x, y;
-    scanf("%f", &a);
-    scanf("%f", &b);
-    scanf("%f", &i);
-    scanf("%f", &j);
-    scanf("%f", &x);
-    scanf("%f", &y);
+    float tinggi, jari2, volume, luas, keliling;
+    scanf("%f", &jari2);
+    scanf("%f", &tinggi);
 
-    hasil = (a - b) * (i / j) - (x + y);
+    volume = M_PI * (jari2 * jari2) * tinggi;
+    luas = 2 * M_PI * jari2 * (jari2 + tinggi);
+    keliling = 2 * M_PI * jari2;
 
-    printf("%.3f", hasil);
+    printf("\nVolume = %.2f", volume);
+    printf("\nVolume = %.2f", luas);
+    printf("\nVolume = %.2f", keliling);
+
     return 0;
 }

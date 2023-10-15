@@ -1,6 +1,6 @@
 import math
-jari2 = float(input("Masukkan jari-jari: "))
-tinggi = float(input("Masukkan tinggi: "))
+jari2 = float(input(""))
+tinggi = float(input(""))
 
 volume = math.pi * (jari2 * jari2) * tinggi
 luas = 2 * math.pi * jari2 * (jari2 + tinggi)
