@@ -1,43 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int angka1, angka2, angka3;
+    int num1, num2;
 
-    printf("Masukkan tiga angka acak: ");
-    scanf("%d %d %d", &angka1, &angka2, &angka3);
+    printf("Input: ");
+    scanf("%d %d", &num1, &num2);
 
-    int min_angka, mid_angka, max_angka;
-
-    if (angka1 <= angka2 && angka1 <= angka3) {
-        min_angka = angka1;
-        if (angka2 <= angka3) {
-            mid_angka = angka2;
-            max_angka = angka3;
-        } else {
-            mid_angka = angka3;
-            max_angka = angka2;
-        }
-    } else if (angka2 <= angka1 && angka2 <= angka3) {
-        min_angka = angka2;
-        if (angka1 <= angka3) {
-            mid_angka = angka1;
-            max_angka = angka3;
-        } else {
-            mid_angka = angka3;
-            max_angka = angka1;
-        }
-    } else {
-        min_angka = angka3;
-        if (angka1 <= angka2) {
-            mid_angka = angka1;
-            max_angka = angka2;
-        } else {
-            mid_angka = angka2;
-            max_angka = angka1;
-        }
+    if (num1 > num2) {
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
     }
 
-    printf("Hasil pengurutan: %d %d %d\n", min_angka, mid_angka, max_angka);
+    printf("Output: %d %d\n", num1, num2);
 
     return 0;
 }
