@@ -1,15 +1,7 @@
-totalDetik = int(input("Input: "))
+# Minta pengguna memasukkan dua angka
+num1, num2 = map(int, input("Input: ").split())
 
-hari = totalDetik // 86400
-totalDetik %= 86400
+if num1 > num2:
+    num1, num2 = num2, num1
 
-jam = totalDetik // 3600
-totalDetik %= 3600
-
-menit = totalDetik // 60
-detik = totalDetik % 60
-
-if hari > 0:
-    print(f"Output: {hari} hari {jam:02}:{menit:02}:{detik:02}")
-else:
-    print(f"Output: {jam:02}:{menit:02}:{detik:02}")
+print(f"Output: {num1} {num2}")
