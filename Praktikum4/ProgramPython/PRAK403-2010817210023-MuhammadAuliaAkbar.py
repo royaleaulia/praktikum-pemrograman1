@@ -24,4 +24,3 @@ elif input1 > input2:
 
 else:
     print("The two numbers are equal")
-

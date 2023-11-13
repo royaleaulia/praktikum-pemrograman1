@@ -5,7 +5,7 @@ int main()
     int n, kelipatan, hasilpbaris;
     int hasil = 0;
     int hasilakhir = 0;
-    printf("Banyaknya N dan Kelipatan: ");
+    printf("Input ");
     scanf("%d"
           "%d",
           &n, &kelipatan);
@@ -25,4 +25,5 @@ int main()
     }
 
     printf("%d", hasilakhir);
+    return 0;
 }

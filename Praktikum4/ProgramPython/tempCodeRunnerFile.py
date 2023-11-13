@@ -1,15 +1,19 @@
-Inputan = int(input("Input: "))
+DuaInputan = input("Input : ")
 
-for i in range(1, Inputan):
-    if(i % 2 == 1):
-        print(i , end=' ')
+banyakN, kelipatan = map(int, DuaInputan.split())
+
+hasil = 0
+hasilAkhir = 0
+
+
+for i in range(1, banyakN+1):
+    hasilpbaris = i * kelipatan
+    hasil += hasilpbaris
+    if i == 1:
+        print(f"{i} * {kelipatan} = {hasilpbaris}")
     else:
-        continue
+        print(f"({i} * {kelipatan}) + ({i-1} * {kelipatan}) = {hasil}")
+    
+    hasilAkhir += hasil
 
-print("")
-
-for j in range(Inputan, 1, -1):
-    if(j % 2 == 0):
-        print(j , end=' ')
-    else:
-        continue
+print(hasilAkhir)

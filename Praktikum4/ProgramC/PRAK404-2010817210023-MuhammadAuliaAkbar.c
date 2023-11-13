@@ -22,7 +22,7 @@ int main()
             printf("Masukan nilai kedua: ");
             scanf("%f", &nKedua);
             hasil = nPertama + nKedua;
-            printf("Hasil Penjumlahan antara %.0f dengan %.0f adalah %.0f", nPertama, nKedua, hasil);
+            printf("Hasil Penjumlahan antara %.2f dengan %.2f adalah %.2f", nPertama, nKedua, hasil);
             break;
         case 2:
             printf("Masukan nilai pertama: ");
@@ -30,7 +30,7 @@ int main()
             printf("Masukan nilai kedua: ");
             scanf("%f", &nKedua);
             hasil = nPertama - nKedua;
-            printf("Hasil Pengurangan antara %.0f dengan %.0f adalah %.0f", nPertama, nKedua, hasil);
+            printf("Hasil Pengurangan antara %.2f dengan %.2f adalah %.2f", nPertama, nKedua, hasil);
             break;
         case 3:
             printf("Masukan nilai pertama: ");
@@ -38,7 +38,7 @@ int main()
             printf("Masukan nilai kedua: ");
             scanf("%f", &nKedua);
             hasil = nPertama * nKedua;
-            printf("Hasil Perkalian antara %.0f dengan %.0f adalah %.0f", nPertama, nKedua, hasil);
+            printf("Hasil Perkalian antara %.2f dengan %.2f adalah %.2f", nPertama, nKedua, hasil);
             break;
         case 4:
             printf("Masukan nilai pertama: ");
@@ -46,7 +46,7 @@ int main()
             printf("Masukan nilai kedua: ");
             scanf("%f", &nKedua);
             hasil = nPertama / nKedua;
-            printf("Hasil Pembagian antara %.0f dengan %.0f adalah %.2f", nPertama, nKedua, hasil);
+            printf("Hasil Pembagian antara %.2f dengan %.2f adalah %.2f", nPertama, nKedua, hasil);
             break;
         case 5:
             printf("Program telah berakhir...\n");

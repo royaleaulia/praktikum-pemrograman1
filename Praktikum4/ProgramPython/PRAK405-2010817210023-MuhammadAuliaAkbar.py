@@ -1,4 +1,4 @@
-DuaInputan = input("Dua Inputan : ")
+DuaInputan = input("Input : ")
 
 banyakN, kelipatan = map(int, DuaInputan.split())
 

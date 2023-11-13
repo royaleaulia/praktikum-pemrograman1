@@ -2,32 +2,28 @@
 
 int main()
 {
-    int input;
-    int i, j;
-    printf("Input: ");
-    scanf("%d", &input);
-    for (i = 1; i <= input; i++)
+    int n, kelipatan, hasilpbaris;
+    int hasil = 0;
+    int hasilakhir = 0;
+    printf("Input ");
+    scanf("%d"
+          "%d",
+          &n, &kelipatan);
+    for (int i = 1; i <= n; i++)
     {
-        if (i % 2 == 1)
+        hasilpbaris = i * kelipatan;
+        hasil += hasilpbaris;
+        if (i == 1)
         {
-            printf("%d ", i);
+            printf("%d * %d = %d\n", i, kelipatan, hasilpbaris);
         }
         else
         {
-            continue;
+            printf("(%d * %d) + (%d * %d) = %d\n", i, kelipatan, i - 1, kelipatan, hasil);
         }
+        hasilakhir += hasil;
     }
-    printf("\n");
-    for (j = input; j > 0; j--)
-    {
-        if (j % 2 == 0)
-        {
-            printf("%d ", j);
-        }
-        else
-        {
-            continue;
-        }
-    }
+
+    printf("%d", hasilakhir);
     return 0;
 }
