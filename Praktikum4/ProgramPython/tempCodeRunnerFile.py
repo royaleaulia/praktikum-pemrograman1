@@ -1,6 +1,6 @@
 Inputan = int(input("Input: "))
 
-for i in range(1, Inputan+1):
+for i in range(1, Inputan):
     if(i % 2 == 1):
         print(i , end=' ')
     else:

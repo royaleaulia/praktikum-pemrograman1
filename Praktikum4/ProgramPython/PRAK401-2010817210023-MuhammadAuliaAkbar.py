@@ -1,4 +1,4 @@
-userInput = input('Example: 42 X =  ')
+userInput = input('Input: ')
 parts = userInput.split()
 
 if len(parts) == 2:
