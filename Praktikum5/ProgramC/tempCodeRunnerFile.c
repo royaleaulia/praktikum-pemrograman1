@@ -1,23 +1,24 @@
 #include <stdio.h>
-#include <math.h>
-int hitung(int nilai1, int nilai2){
-    //Lengkapi Function ini
-    return fabs(nilai1 - nilai2);
-}
-int mutlak(int angka){
-    //Lengkapi Function ini
-    return (angka < 0) ? -angka : angka; 
+
+void Biodata(int tahunLahir, char nama[], char asal[]) {
+    int tahunSekarang = 2020;
+    int umur = tahunSekarang - tahunLahir;
+
+    printf("Perkenalkan Nama Saya : %s\n", nama);
+    printf("Umur Saya : %d\n", umur);
+    printf("Saya Adalah Angkatan : %d\n", tahunSekarang);
+    printf("Asal Saya dari : %s\n", asal);
 }
 
-int main()
-{
-    int a,b,c,d;
-    int Hasil;
-    scanf("%d",&a);
-    scanf("%d",&c);
-    scanf("%d",&b);
-    scanf("%d",&d);
-    Hasil = hitung(a,b) + hitung(c,d);
-    printf("%d",mutlak(Hasil));
+int main() {
+    int tahunLahir;
+    char Namaku[20], Asal[15];
+
+    scanf("%d", &tahunLahir);
+    scanf(" %[^\n]%*c", Namaku);
+    scanf(" %[^\n]%*c", Asal);
+
+    Biodata(tahunLahir, Namaku, Asal);
+
     return 0;
 }

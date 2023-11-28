@@ -1,15 +1,15 @@
-from math import fabs
+def Biodata(tahun_lahir, nama, asal):
+    tahun_sekarang = 2020
+    umur = tahun_sekarang - tahun_lahir
 
-def hitung (nilai1, nilai2):
-    return fabs(nilai1 - nilai2)
+    print(f"Perkenalkan Nama Saya : {nama}")
+    print(f"Umur Saya : {umur}")
+    print(f"Saya Adalah Angkatan : {tahun_sekarang}")
+    print(f"Asal Saya dari : {asal}")
 
-def mutlak(angka):
-    if angka < 0:
-        return -angka
-    else:
-        return angka
-    
-a, c, b, d = map(int, input().split())
 
-hasil = hitung(a, b) + hitung(c, d)
-print(f"{int(mutlak(hasil))}")
+tahun_lahir = int(input())
+nama = input()
+asal = input()
+
+Biodata(tahun_lahir, nama, asal)
