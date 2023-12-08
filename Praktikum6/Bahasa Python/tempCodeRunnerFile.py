@@ -1,24 +1,24 @@
-baris1, baris2 = map(int, input("Masukkan Ukuran Matriks (Baris x Kolom): ").split())
+# Input ordo matriks
+n = int(input(""))
 
-# Inisialisasi matriks pertama dan kedua
-matriks1 = []
-matriks2 = []
+# Input matriks A
+print("Masukkan elemen matriks A:")
+A = [[int(input()) for _ in range(n)] for _ in range(n)]
 
-if baris1 != baris2:
-    print("Jumlah Tidak Sama")
-else:
-    # Input elemen matriks pertama
-    print("Masukkan elemen matriks pertama:")
-    matriks1 = list(map(int, input().split()))
+# Input matriks B
+print("Masukkan elemen matriks B:")
+B = [[int(input()) for _ in range(n)] for _ in range(n)]
 
-    # Input elemen matriks kedua
-    print("Masukkan elemen matriks kedua:")
-    matriks2 = list(map(int, input().split()))
+# Perkalian matriks A dan B
+hasil = [[0 for _ in range(n)] for _ in range(n)]
+for i in range(n):
+    for j in range(n):
+        for k in range(n):
+            hasil[i][j] += A[i][k] * B[k][j]
 
-    # Inisialisasi matriks hasil
-    hasil = [matriks1[i] * matriks2[i] for i in range(baris1)]
-
-    # Menampilkan hasil
-    print("Hasil perkalian matriks:")
-    for nilai in hasil:
-        print(nilai, end=" ")
+# Menampilkan hasil perkalian
+print("Matriks AXB")
+for i in range(n):
+    for j in range(n):
+        print(f"{hasil[i][j]}", end=" ")
+    print()
